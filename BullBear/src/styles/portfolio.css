@@ -1,0 +1,60 @@
+.portfolio-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.add-form { padding: 24px; margin-bottom: 24px; }
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 14px;
+}
+.stock-input {
+  width: 100%;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 14px;
+  color: var(--text-primary);
+  font-size: 13px;
+  outline: none;
+  transition: var(--transition);
+}
+.stock-input:focus { border-color: var(--blue); }
+.stock-input::placeholder { color: var(--text-muted); }
+
+.portfolio-main {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 20px;
+  margin-bottom: 40px;
+  align-items: start;
+}
+.table-card { padding: 24px; }
+.portfolio-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.portfolio-table th {
+  text-align: left;
+  padding: 10px 12px;
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 12px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+.table-row td { padding: 12px; border-bottom: 1px solid rgba(255,255,255,0.03); }
+.table-row:last-child td { border-bottom: none; }
+.table-row:hover td { background: rgba(255,255,255,0.02); }
+.sym-badge {
+  background: var(--blue-dim);
+  color: var(--blue);
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+@media (max-width: 1100px) {
+  .portfolio-main { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,12 @@
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.news-card { overflow: hidden; padding: 0; }
+.news-color-bar { height: 4px; }
+.news-card-body { padding: 20px; }
+.news-category { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+.news-headline { font-size: 15px; font-weight: 700; line-height: 1.5; margin-bottom: 8px; }
+.news-summary { color: var(--text-secondary); font-size: 13px; line-height: 1.6; }

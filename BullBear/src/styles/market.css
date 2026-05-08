@@ -1,0 +1,24 @@
+.indices-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+.index-card { padding: 22px; }
+.bull-card { border-color: rgba(0,208,132,0.15) !important; }
+.bear-card { border-color: rgba(255,77,109,0.15) !important; }
+
+.sector-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 12px;
+}
+.sector-tile {
+  padding: 16px 14px;
+  border-radius: 12px;
+  text-align: center;
+  transition: var(--transition);
+  cursor: default;
+}
+.sector-tile:hover { transform: scale(1.05); }
+.sector-bull { background: rgba(0,208,132,0.1); border: 1px solid rgba(0,208,132,0.2); color: var(--green); }
+.sector-bear { background: rgba(255,77,109,0.1); border: 1px solid rgba(255,77,109,0.2); color: var(--red); }
