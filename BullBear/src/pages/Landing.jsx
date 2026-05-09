@@ -37,21 +37,20 @@ export default function Landing() {
         <div className="container hero-inner">
           <div className="hero-text">
             <div className="hero-badge">
-              <span className="badge-bull">🐂 Bullish</span>
+              <span className="badge-bull"> Bullish</span>
               <span style={{ margin: '0 8px', color: 'var(--text-muted)' }}>vs</span>
-              <span className="badge-bear">🐻 Bearish</span>
+              <span className="badge-bear"> Bearish</span>
               <span style={{ marginLeft: '10px', color: 'var(--text-secondary)', fontSize: '13px' }}>— Master Both Sides</span>
             </div>
             <h1 className="hero-heading">
               Your Complete<br />
               <span className="gradient-text">Stock Market</span><br />
-              Intelligence Hub
             </h1>
             <p className="hero-sub">
               Track markets, manage your portfolio, read financial news, and analyze trends — all from one premium dashboard built for the modern investor.
             </p>
             <div className="hero-btns">
-              <Link to="/dashboard"><button className="btn-primary">🚀 Open Dashboard</button></Link>
+              <Link to="/dashboard"><button className="btn-primary"> Open Dashboard</button></Link>
               <Link to="/market"><button className="btn-outline">View Markets</button></Link>
             </div>
             <div className="hero-stats">
